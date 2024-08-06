@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdh-aZ1vYamJbpQNM_UA_mytCvfRtJLg-CfA&s') no-repeat center center fixed;
+    background-size: cover;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: url('https://wallpapers.com/images/featured/universe-qs811igzbabl1m0o.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.welcome-message {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        top: 50%;
+    }
+}
+
+.controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.project {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 150px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
+}
+
+.project img {
+    max-width: 100%;
+    max-height: 100px; /* Adjusted height to fit smaller project box */
+    border-radius: 10px;
+}
+
+.project h2 {
+    margin: 10px 0;
+    font-size: 16px; /* Adjusted font size */
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .project {
+    background: #333;
+    border: 1px solid #555;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
