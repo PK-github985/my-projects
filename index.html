@@ -37,6 +37,14 @@
    <div class="footer">
         Designed by:- Parbhansh With ❤
     </div>
+     <script>
+        window.onload = function() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(error => {
+                console.log('Autoplay was prevented:', error);
+            });
+        };
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
