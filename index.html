@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multitasker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-message" id="welcomeMessage">
+        <h1>Welcome to my projects</h1>
+    </div>
+    <div class="controls">
+        <button id="toggleDarkMode">🌓</button>
+    </div>
+    <div class="project-gallery">
+        <div class="project" onclick="openProject('https://pk-github985.github.io/calculator/')">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA5L3B4MTM0OTAzNC1pbWFnZS1qb2I5MjJfMS5wbmc.png" alt="Project 1">
+            <h2>Calculator</h2>
+        </div>
+        <div class="project" onclick="openProject('https://pk-github985.github.io/simple-milk-calculator/')">
+            <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/milk-11777415-9632383.png?f=webp&w=256" alt="Project 2">
+            <h2>milk cost 
+              calculator</h2>
+        </div>
+      <div class="project" onclick="openProject('https://pk-github985.github.io/billing-page/')">
+            <img src="https://m.media-amazon.com/images/I/61GIoLNCCJL._AC_UF1000,1000_QL80_.jpg" alt="Project 1">
+            <h2>Billing page</h2>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   <div class="footer">
+        Designed by:- Parbhansh With ❤
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
